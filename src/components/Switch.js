@@ -6,13 +6,13 @@ const Switch = (props) => {
 
         <button onClick={() => {
           props.setSwitch(true)
-        }} className={props.setSwitch ? "switch-1" : "on"}>
+        }} className={props.switch ? "switch-1 on" : "switch-1"}>
           ON
         </button>
 
         <button onClick={() => {
           props.setSwitch(false)
-        }} className="switch-1">
+        }} className={props.switch ? "switch-2" : "switch-2 on"}>
           OFF
         </button>
 
