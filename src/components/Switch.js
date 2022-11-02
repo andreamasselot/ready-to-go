@@ -1,13 +1,21 @@
-const Switch = () => {
+const Switch = (props) => {
+
   return (
     <>
       <div className="switch-container">
-        <button className="on">
+
+        <button onClick={() => {
+          props.setSwitch(true)
+        }} className={props.setSwitch ? "switch-1" : "on"}>
           ON
         </button>
-        <button className="off">
+
+        <button onClick={() => {
+          props.setSwitch(false)
+        }} className="switch-1">
           OFF
         </button>
+
       </div>
     </>
   )

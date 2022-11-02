@@ -1,8 +1,14 @@
 import './App.css';
+import { useState } from 'react';
 import Switch from './components/Switch';
 import Autorisation from './components/Autorisation';
-
 function App() {
+
+  const [switch1, setSwitch1] = useState(false);
+  const [switch2, setSwitch2] = useState(false);
+  const [switch3, setSwitch3] = useState(false);
+
+
   return (
     <div className='container'>
       <header>
@@ -11,9 +17,9 @@ function App() {
 
       <div className='body'>
         <div className='buttons-container'>
-          <Switch />
-          <Switch />
-          <Switch />
+          <Switch switch={switch1} setSwitch={setSwitch1} />
+          <Switch switch={switch2} setSwitch={setSwitch2} />
+          <Switch switch={switch3} setSwitch={setSwitch3} />
         </div>
         <div className='autorisation-container'>
           <Autorisation />

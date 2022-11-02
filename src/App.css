@@ -22,19 +22,35 @@ header h1 {
   height: 90vh;
 }
 
-.on {
+.switch-1 {
   margin-right: 20px;
   font-size: 26px;
   border: none;
   border-radius: 5px;
   padding: 10px;
+  background-color: white;
+  border: #dddddd 1px solid;
+  color: #5C47D3;
 }
 
-.off {
+.switch-2 {
   font-size: 26px;
   border: none;
   border-radius: 5px;
   padding: 10px;
+  background-color: white;
+  border: #dddddd 1px solid;
+  color: #5C47D3;
+}
+
+.on {
+  background-color: #5C47D3;
+  color: white;
+}
+
+.go {
+  background-color: #46ac4a;
+  color: white;
 }
 
 .autorisation {
@@ -42,6 +58,14 @@ header h1 {
   width: 200px;
   height: 100px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.autorisation p {
+  color: white;
+  font-size: 30px;
 }
 
 .body {
@@ -50,6 +74,7 @@ header h1 {
   align-items: center;
   gap: 100px;
 }
+
 
 footer {
   text-align: center;
